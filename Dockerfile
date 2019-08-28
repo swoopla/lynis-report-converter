@@ -7,7 +7,7 @@ RUN useradd -d /lynis-report-converter -U lynis
 RUN apt-get update \
     && apt-get upgrade -y \
     && apt-get install -y --no-install-recommends \
-       htmldoc libxml-writer-perl libarchive-zip-perl libjson-perl \
+       htmldoc libxml-writer-perl libarchive-zip-perl libjson-perl libexcel-writer-xlsx-perl \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
